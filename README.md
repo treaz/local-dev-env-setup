@@ -1,6 +1,9 @@
-# mac-dev-setup
-This repo is what I use to initialize a fresh mac with my development environment.
-It was tested with macOS Mojave (10.14.2).
+# mac-dev-setup (alpha)
+This repo was created after I installed my development environment on a new MacBook.
+
+It was tested (after most of the software was installed) on macOS Mojave (10.14.2).
+
+I assume that a clean install it should mostly work, but if it doesn't, just raise an issue and I'll take care of it.
 
 # Usage
 Clone the repo and run any of the install_* or configure_* scripts
