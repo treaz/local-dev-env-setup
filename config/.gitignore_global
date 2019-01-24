@@ -1,0 +1,6 @@
+# Mac specific Folder view configuration files
+.DS_Store
+
+# Intellij specific folders and files
+.idea
+*.iml

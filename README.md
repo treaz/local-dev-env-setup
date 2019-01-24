@@ -11,6 +11,8 @@ Clone the repo and run any of the install_* or configure_* scripts
 git clone https://github.com/treaz/mac-dev-setup
 cd mac-dev-setup
 ./install_<feature>
+./configure_os_settings.sh # configures macOS settings
+./copy_config_files.sh #adds most commonly used settings files to home dir
 ```
 
 
