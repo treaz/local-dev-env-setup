@@ -38,4 +38,5 @@ brew cask install postman
 brew cask install virtualbox
 brew cask install kitematic
 brew install awscli
+brew install node
 
