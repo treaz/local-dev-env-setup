@@ -12,6 +12,12 @@ echo "Setting expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
+echo "Add the volume icon on the menu bar"
+defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Volume.menu"
+echo "Restarting the menu bar"
+killall -KILL SystemUIServer
+
 ###############################################################################
 ### Keyboard
 ###############################################################################
@@ -31,6 +37,8 @@ echo "Setting Finder: show hidden files by default"
 defaults write com.apple.finder AppleShowAllFiles -bool true
 echo "Setting Finder: show path bar"
 defaults write com.apple.finder ShowPathbar -bool true
+echo "Restarting Finder"
+killall Finder
 
 ###############################################################################
 ### Mail
