@@ -41,6 +41,13 @@ echo "Restarting Finder"
 killall Finder
 
 ###############################################################################
+### Firewall
+###############################################################################
+
+echo "Turning on the firewall, you'll need to restart the computer for changes to take effect"
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+
+###############################################################################
 ### Mail
 ###############################################################################
 
