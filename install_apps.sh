@@ -37,6 +37,8 @@ brew cask install graphql-playground
 brew cask install postman
 brew cask install virtualbox
 brew cask install kitematic
+# GUI for lsof - displays all open files and sockets in use by all running processes on your system
+brew cask install sloth
 brew install awscli
 brew install node
 
