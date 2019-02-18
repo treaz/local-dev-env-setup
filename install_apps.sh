@@ -22,11 +22,17 @@ brew cask install stay
 brew cask install grandperspective
 # Anti-RSI & fatigue break manager
 brew cask install time-out
+# Professional image editing tool
+brew cask install gimp
+
+###############################################################################
+### Paid apps
+###############################################################################
 # PAID network traffic manager (limits application access)
 brew cask install tripmode
 # PAID VPN client
 brew cask install viscosity
-# Invite-only cloud storage service
+# PAID cloud storage service
 brew cask install stack
 
 ### Development apps ###
