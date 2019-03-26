@@ -18,6 +18,13 @@ defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/C
 echo "Restarting the menu bar"
 killall -KILL SystemUIServer
 
+echo "Set automatically quit printer app once the print jobs complete"
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+echo "Enabling Require password immediately after sleep or screen saver begins"
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
 ###############################################################################
 ### Keyboard
 ###############################################################################
@@ -50,6 +57,8 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 ###############################################################################
 ### Mail
 ###############################################################################
+echo "Disabling expansion of attachments (Inline Attachment)"
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 
 echo "Manual step: Disabling Remote Content in Apple Mail"
 echo "Launch Mail in OS X and go to Mail > Preferences > Viewing. Find the box labeled Load remote content in messages and uncheck it."
