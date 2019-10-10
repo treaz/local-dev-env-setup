@@ -2,7 +2,7 @@
 
 source ./setup_homebrew.sh
 # This script installs the java environment
-
+# Deprecated: see install_jvm_langs.sh
 
 brew tap caskroom/versions
 brew cask install java8
