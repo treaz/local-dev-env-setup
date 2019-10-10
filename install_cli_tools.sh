@@ -20,3 +20,9 @@ brew install telnet
 ### Libraries ###
 # libdvdcss is used for ripping dvds ( dependency of handbrake app). You might not need it.
 brew install libdvdcss
+
+### Development apps ###
+brew install awscli
+brew install node
+# Interactive man-in-the-middle proxy for HTTP and HTTPS
+brew install mitmproxy
