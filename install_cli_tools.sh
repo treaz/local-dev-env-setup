@@ -16,6 +16,9 @@ chsh -s /us
 brew install git
 brew install wget
 brew install telnet
+# Install sha256sum and others
+brew install coreutils
+echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.bash_profile
 
 ### Libraries ###
 # libdvdcss is used for ripping dvds ( dependency of handbrake app). You might not need it.
