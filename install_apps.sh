@@ -49,4 +49,3 @@ brew cask install sloth
 # Wireshark app and cli
 brew install wireshark
 brew cask install wireshark
-brew cask install wireshark-chmodbpf
