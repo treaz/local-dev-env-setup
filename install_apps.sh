@@ -45,4 +45,8 @@ brew cask install virtualbox
 brew cask install kitematic
 # GUI for lsof - displays all open files and sockets in use by all running processes on your system
 brew cask install sloth
+
+# Wireshark app and cli
 brew install wireshark
+brew cask install wireshark
+brew cask install wireshark-chmodbpf
