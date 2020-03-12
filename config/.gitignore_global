@@ -4,3 +4,6 @@
 # Intellij specific folders and files
 .idea
 *.iml
+
+# Java specific folders and files
+target
