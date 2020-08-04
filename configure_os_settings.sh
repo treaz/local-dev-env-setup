@@ -60,10 +60,16 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 echo "Disabling expansion of attachments (Inline Attachment)"
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 
+###############################################################################
+### Misc
+###############################################################################
+echo "Disabling creation of .DS_Store files"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
+printf "\n### MANUAL operations ###\n"
 echo "Manual step: Disabling Remote Content in Apple Mail"
 echo "Launch Mail in OS X and go to Mail > Preferences > Viewing. Find the box labeled Load remote content in messages and uncheck it."
 
-printf "\n### MANUAL operations ###\n"
 echo "To enable trackpad tap to click, do it via interface because the cli seems to be macOS version dependent"
 echo "To increase the resolution of the retina screen, do it via the interface (displays -> scaled)"
 echo "Ultimately, restart the computer so changes take effect everywhere (might not be needed, but just to make sure)"
