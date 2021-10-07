@@ -1,9 +1,9 @@
 # mac-dev-setup (alpha)
-This repo was created after I installed my development environment on a new MacBook.
+This dir was created after I installed my development environment on a new MacBook.
 
 It was tested (after most of the software was installed) on macOS Mojave (10.14.2).
 
-I assume that a clean install it should mostly work, but if it doesn't, just raise an issue and I'll take care of it.
+I assume that a clean install it should mostly work, but if it doesn't, just raise an issue, and I'll take care of it.
 
 # Usage
 Clone the repo and run any of the install_* or configure_* scripts
