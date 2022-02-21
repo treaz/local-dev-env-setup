@@ -23,6 +23,8 @@ fi
 if test ! $(which brew); then
   echo "Installing homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/horiaconstantin/.bash_profile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Make sure we’re using the latest Homebrew.
