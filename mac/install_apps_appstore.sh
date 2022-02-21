@@ -11,7 +11,5 @@ mas lucky "Xcode"
 # Install Xcode command line developer tools
 xcode-select --install
 
-# Paid VPN
-mas lucky "nordvpn ike"
 # Clipboard manager
 mas lucky "CopyClip 2"
