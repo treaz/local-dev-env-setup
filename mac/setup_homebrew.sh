@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Change shell to bash (as default for macos is zsh
+chsh -s /bin/bash
+
 # Ask for the administrator password upfront.
 sudo -v
 
