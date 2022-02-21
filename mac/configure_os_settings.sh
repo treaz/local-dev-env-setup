@@ -54,6 +54,15 @@ killall Finder
 echo "Turning on the firewall, you'll need to restart the computer for changes to take effect"
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
+
+###############################################################################
+### Behind-the-scenes settings
+###############################################################################
+# Based on this: https://apple.stackexchange.com/questions/296111/macos-sierra-ulimit-maxproc-only-2500
+echo "Setting OS into Server performace mode, you'll need to restart the computer for changes to take effect"
+sudo nvram boot-args="serverperfmode=1 $(nvram boot-args 2>/dev/null | cut -f 2-)"
+
+
 ###############################################################################
 ### Mail
 ###############################################################################
