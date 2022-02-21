@@ -25,6 +25,9 @@ echo "Enabling Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+echo "Switching to Dark Mode" #ref: https://www.simonewebdesign.it/how-to-enable-dark-mode-macos-command-line/
+osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
+
 ###############################################################################
 ### Keyboard
 ###############################################################################
