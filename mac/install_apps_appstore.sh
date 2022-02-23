@@ -10,6 +10,3 @@ brew install mas
 mas lucky "Xcode"
 # Install Xcode command line developer tools
 xcode-select --install
-
-# Clipboard manager
-mas lucky "CopyClip 2"

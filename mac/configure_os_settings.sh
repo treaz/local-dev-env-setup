@@ -76,7 +76,7 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 ### Sound
 ###############################################################################
 echo "Disabling OS sounds effects"
-defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+osascript disable_sound_effects.scpt
 
 ###############################################################################
 ### Misc
@@ -85,9 +85,11 @@ echo "Disabling creation of .DS_Store files"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
 printf "\n### MANUAL operations ###\n"
-echo "Manual step: Disabling Remote Content in Apple Mail"
-echo "Launch Mail in OS X and go to Mail > Preferences > Viewing. Find the box labeled Load remote content in messages and uncheck it."
+echo "Remote Content loading is now disabled automatically (see Mail > Preferences > Privacy)"
 
 echo "To enable trackpad tap to click, do it via interface because the cli seems to be macOS version dependent"
+read -p "Press any key to continue... "
 echo "To increase the resolution of the retina screen, do it via the interface (displays -> scaled)"
+read -p "Press any key to continue... "
+
 echo "Ultimately, restart the computer so changes take effect everywhere (might not be needed, but just to make sure)"

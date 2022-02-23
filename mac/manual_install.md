@@ -2,7 +2,6 @@
 
 * Xcode 
 * App Cleaner
-* Backup and Sync (google drive)
 * Docker
-* mailbulter
 * istats menu
+* CopyClip 2
