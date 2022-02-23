@@ -73,6 +73,12 @@ echo "Disabling expansion of attachments (Inline Attachment)"
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes
 
 ###############################################################################
+### Sound
+###############################################################################
+echo "Disabling OS sounds effects"
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+
+###############################################################################
 ### Misc
 ###############################################################################
 echo "Disabling creation of .DS_Store files"
