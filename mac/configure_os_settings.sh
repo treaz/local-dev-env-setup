@@ -91,5 +91,7 @@ echo "To enable trackpad tap to click, do it via interface because the cli seems
 read -p "Press any key to continue... "
 echo "To increase the resolution of the retina screen, do it via the interface (displays -> scaled)"
 read -p "Press any key to continue... "
+echo "To change the F1, F2 to normal behavior, do it via the interface (System Preferences -> Keyboard)"
+read -p "Press any key to continue... "
 
 echo "Ultimately, restart the computer so changes take effect everywhere (might not be needed, but just to make sure)"
