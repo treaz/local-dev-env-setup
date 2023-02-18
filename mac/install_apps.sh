@@ -4,7 +4,6 @@ source ./setup_homebrew.sh
 # This script installs the apps that I use
 
 ### Generic apps ###
-brew install --cask joplin
 brew install --cask firefox
 brew install --cask brave-browser
 brew install --cask slack
